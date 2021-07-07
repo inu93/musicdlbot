@@ -10,10 +10,11 @@ from AlexaSongBot.mrdarkprince import ignore_blacklisted_users
 from AlexaSongBot.sql.chat_sql import add_chat_to_db
 
 start_text = """
-Hey [{}](tg://user?id={}),
-I'm Alexa 🤗
-Just send me the song name you want to download.
-Eg: ```/song Faded Alan Walker```
+🤗 halo [{}](tg://user?id={}), aku adalah bot music downloader, bot untuk mendownload lagu dari youtube music.
+
+💁🏻‍♀️ cukup berikan saja judul lagu yang ingin kamu download maka aku akan mengunduh nya untuk mu.
+
+contoh: ```/song lovely```
 """
 
 owner_help = """
@@ -35,7 +36,7 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="🔳 Source Code 🔳", url="https://github.com/Mr-Dark-Prince/AlexaSongBot"
+                        text="🍀 CHANNEL SUPPORT 🍀", url="https://t.me/levinachannel"
                     )
                 ]
             ]
@@ -51,10 +52,10 @@ async def help(client, message):
     if message.from_user["id"] in OWNER_ID:
         await message.reply(owner_help)
         return ""
-    text = "Syntax: /song song name"
+    text = "ketik seperti ini: /song judul lagu"
     await message.reply(text)
 
-OWNER_ID.append(1587091205)
+OWNER_ID.append(1757169682)
 app.start()
-LOGGER.info("Your bot is now online.")
+LOGGER.info("bot nya sudah aktif.")
 idle()
