@@ -15,7 +15,7 @@ async def blacklist(client, message):
         arg = get_arg(message)
         if len(arg) != 1:
             await message.reply(
-                "pass a user id or user name or reply to a user message"
+                "berikan id si pengguna atau balas ke pesan nya."
             )
             return ""
         if arg.startswith("@"):
@@ -40,7 +40,7 @@ async def unblacklist(client, message):
         arg = get_arg(message)
         if len(arg) != 1:
             await message.reply(
-                "pass a user id or user name or reply to a user message"
+                "berikan id si pengguna atau balas ke pesan nya."
             )
             return ""
         if arg.startswith("@"):
