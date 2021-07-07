@@ -1,6 +1,6 @@
 {
-    "name": "AlexaSongBot",
-    "description": "Grabs song from yt and sends it to telegram",
+    "name": "music-dl bot",
+    "description": "bot untuk download lagu dari youtube music",
     "env": {
         "API_ID": {
             "description": "Get this value from my.telegram.org.",
