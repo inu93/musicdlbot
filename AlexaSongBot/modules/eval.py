@@ -8,7 +8,7 @@ from config import OWNER_ID
 
 @app.on_message(filters.user(OWNER_ID) & filters.command("eval"))
 async def eval(client, message):
-    status_message = await message.reply_text("Processing ...")
+    status_message = await message.reply_text("memproses...")
     cmd = message.text.split(" ", maxsplit=1)[1]
 
     reply_to_ = message
@@ -39,7 +39,7 @@ async def eval(client, message):
     elif stdout:
         evaluation = stdout
     else:
-        evaluation = "Success"
+        evaluation = "success"
 
     final_output = "<b>EVAL</b>: "
     final_output += f"<code>{cmd}</code>\n\n"
